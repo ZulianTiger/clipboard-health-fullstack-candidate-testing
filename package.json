@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $PORT",
+    "start2": "next start -p 8080",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@svgr/webpack": "^5.5.0",
